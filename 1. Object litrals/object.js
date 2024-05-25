@@ -11,4 +11,3 @@ var userOne = {
     }
 };
 
-console.log(userOne.name);
