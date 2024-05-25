@@ -41,16 +41,41 @@
 // - sets the value of 'this' to be the new empty objects
 // - Calls the constructor method
 
+// class User{
+//     constructor(email, name){
+//         this.email = email;
+//         this.name = name;
+//     }
+// }
+
+// var userOne = new User('ryu@ninjas.com', 'Ryu');
+// var userTwo = new User('marioninjas@.com', 'Mario');
+
+
+
+
+
+// CLASS METHODS
+
+
+// methods can't be inside 'constructor' function. Constrcutor function is only for property NOT METHODS.
+
+
 class User{
     constructor(email, name){
         this.email = email;
         this.name = name;
+    } 
+    login(){
+        console.log(this.email, 'just logged in');
+    }
+    logout(){
+        console.log(this.email, 'just logged out');
     }
 }
 
 var userOne = new User('ryu@ninjas.com', 'Ryu');
 var userTwo = new User('marioninjas@.com', 'Mario');
 
-console.log(userOne);
-console.log(userTwo);
-
+userOne.login();
+userTwo.logout();
